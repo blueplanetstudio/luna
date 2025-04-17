@@ -9,8 +9,8 @@ name = "Luna"
 path = "src/luna.rs"
 
 [dependencies]
-# gpui = { git = "https://github.com/zed-industries/zed", rev = "c04c5812b6295ab683fbf1900499330cbc2b3058",  features = ['test-support']}
-gpui = { path = "../zed/crates/gpui", features = ['test-support']}
+gpui = { git = "https://github.com/zed-industries/zed", rev = "c04c5812b6295ab683fbf1900499330cbc2b3058",  features = ['test-support']}
+# gpui = { path = "../zed/crates/gpui", features = ['test-support']}
 anyhow = "1.0.97"
 schemars = "0.8.22"
 schemars_derive = "0.8.22"
@@ -27,3 +27,7 @@ slotmap = "1.0.7"
 quadtree_rs = "0.1.3"
 simplecss = "0.2.2"
 regex = "1.11.1"
+
+[dependencies.glam]
+version = "=0.30.2"
+features = ["std", "debug-glam-assert", "glam-assert"]
